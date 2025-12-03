@@ -104,7 +104,7 @@ export default function Footer({ config, className = "" }: FooterProps) {
               Built with Next.js and Notion
             </p>
             <p className="text-sm text-muted-foreground">
-              2025 
+              2025&nbsp;
               <a
                 href="https://a-b.cc/"
                 target="_blank"
