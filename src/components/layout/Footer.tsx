@@ -108,7 +108,7 @@ export default function Footer({ config, className = "" }: FooterProps) {
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 title="GitHub Open Soucre"
               >
-                <FaGithub className="w-5 h-5" />Open Soucre
+                <FaGithub className="w-5 h-5" style="display: inline-block; vertical-align: bottom; margin-right: 3px;" />Open Soucre
               </a>
             </p>
             <p className="text-sm text-muted-foreground">
