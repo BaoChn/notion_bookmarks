@@ -83,7 +83,7 @@ export default function Navigation({ categories, config = defaultConfig }: Navig
       <nav className="lg:hidden fixed top-0 left-0 right-0 z-20 bg-background border-b">
         <div className="flex items-center justify-between px-4 h-16">
           <div className="flex items-center space-x-2">
-            <Icons.Rocket className="w-5 h-5 text-foreground" />
+            <Icons.Compass className="w-5 h-5 text-foreground" />
             <span className="neon-title">{config.SITE_TITLE}</span>
           </div>
           {config.SHOW_THEME_SWITCHER !== 'false' && <ThemeSwitcher />}
@@ -118,7 +118,7 @@ export default function Navigation({ categories, config = defaultConfig }: Navig
       <nav className="hidden lg:block w-[280px] flex-shrink-0 h-screen sticky top-0 p-4 overflow-y-auto border-r">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center space-x-2">
-            <img alt="FAR Icon" class="relative w-8 h-8 rounded-sm overflow-hidden" src="/favicon.ico">
+            <img alt="FAR Icon" class="relative w-8 h-8 rounded-sm overflow-hidden" src="/favicon.ico" />
             <span className="neon-title">{config.SITE_TITLE}</span>
           </div>
           {config.SHOW_THEME_SWITCHER !== 'false' && <ThemeSwitcher />}
