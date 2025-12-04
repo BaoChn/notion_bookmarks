@@ -101,16 +101,25 @@ export default function Footer({ config, className = "" }: FooterProps) {
           </div>
           <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
             <p className="hidden md:block text-sm text-muted-foreground">
-              Built with Next.js and Notion
+              <a
+                href="https://github.com/BaoChn/notion_bookmarks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                title="GitHub Open Soucre"
+              >
+                <FaGithub className="w-5 h-5" />Open Soucre
+              </a>
             </p>
             <p className="text-sm text-muted-foreground">
-              2025&nbsp;
+              &copy;2025&nbsp;
               <a
                 href="https://a-b.cc/"
                 target="_blank"
                 rel="noopener noreferrer"
-              >{config.SITE_AUTHOR}</a>
-              . All rights reserved.
+              >
+                {config.SITE_AUTHOR}
+              </a>
             </p>
           </div>
         </div>
