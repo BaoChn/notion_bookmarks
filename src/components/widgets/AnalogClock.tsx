@@ -71,16 +71,21 @@ export default function AnalogClock() {
           // 计算数字的位置
           const x = radius * Math.cos(radian);
           const y = radius * Math.sin(radian);
+  
+          // 特殊样式应用到12点
+          const isTwelve = number === 12;
           
           return (
             <div
               key={`number-${i}`}
-              className="absolute text-xs font-medium text-foreground/90"
+              className={`absolute text-xs font-medium text-foreground/90 ${isTwelve ? 'grid place-items-center bg-[#14BEBE] text-white rounded-full' : ''}`}
               style={{
                 left: `calc(50% + ${x}px)`,
                 top: `calc(50% + ${y}px)`,
                 transform: 'translate(-50%, -50%)',
                 zIndex: 10, // 确保数字在最上层
+                // Apply styles conditionally for 12 o'clock position
+                ...(isTwelve && { width: '1.5em', height: '1.5em' }),
               }}
             >
               {number}
