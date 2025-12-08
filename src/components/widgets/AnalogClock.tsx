@@ -83,7 +83,7 @@ export default function AnalogClock() {
                 left: `calc(50% + ${x}px)`,
                 top: `calc(50% + ${y}px)`,
                 transform: 'translate(-50%, -50%)',
-                zIndex: 10, // 确保数字在最上层
+                // zIndex: 10, 确保数字在最上层
                 // Apply styles conditionally for 12 o'clock position
                 ...(isTwelve && { width: '1.5em', height: '1.5em' }),
               }}
