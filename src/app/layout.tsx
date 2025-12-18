@@ -73,7 +73,7 @@ export default async function RootLayout({
         <Clarity clarityId={config.CLARITY_ID || ''} />
         <GoogleAnalytics gaId={config.GA_ID || ''} />
         <link rel="stylesheet" type="text/css" href="https://bao.ink/nav.css" />
-        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script charSet="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `LA.init({id:"KBTl9AaZkTBMMID8", ck:"KBTl9AaZkTBMMID8"})`,
