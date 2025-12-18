@@ -74,7 +74,11 @@ export default async function RootLayout({
         <GoogleAnalytics gaId={config.GA_ID || ''} />
         <link rel="stylesheet" type="text/css" href="https://bao.ink/nav.css" />
         <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-        <script>LA.init({id:"KBTl9AaZkTBMMID8",ck:"KBTl9AaZkTBMMID8"})</script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `LA.init({id:"KBTl9AaZkTBMMID8", ck:"KBTl9AaZkTBMMID8"})`,
+          }}
+        ></script>
       </head>
       <body className={inter.className}>
         <ThemeProvider>
