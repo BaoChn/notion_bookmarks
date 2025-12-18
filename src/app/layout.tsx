@@ -72,8 +72,9 @@ export default async function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Clarity clarityId={config.CLARITY_ID || ''} />
         <GoogleAnalytics gaId={config.GA_ID || ''} />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="//bao.ink/nav.css" />
+        <link rel="stylesheet" type="text/css" href="https://bao.ink/nav.css" />
+        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>LA.init({id:"KBTl9AaZkTBMMID8",ck:"KBTl9AaZkTBMMID8"})</script>
       </head>
       <body className={inter.className}>
         <ThemeProvider>
